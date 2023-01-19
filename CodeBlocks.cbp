@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="CodeBlocks/bin/Debug/CodeBlocks" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="CodeBlocks/." />
-				<Option object_output="CodeBlocks/obj/Debug/" />
+				<Option output="workdir/bin/DebugCB/CodeBlocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="workdir/." />
+				<Option object_output="workdir/obj/DebugCB/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -17,9 +17,9 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="CodeBlocks/bin/Release/CodeBlocks" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="CodeBlocks/." />
-				<Option object_output="CodeBlocks/obj/Release/" />
+				<Option output="workdir/bin/ReleaseCB/CodeBlocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="workdir/." />
+				<Option object_output="workdir/obj/ReleaseCB/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -35,8 +35,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
-		<Unit filename="projekt1.cpp" />
-		<Unit filename="projekt1.h" />
+		<Unit filename="projekt.cpp" />
+		<Unit filename="projekt.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

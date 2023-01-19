@@ -1,0 +1,40 @@
+wejście:
+
+array			- tablica zawierająca dane do posortowania
+range_min		- najmniejsza możliwa wartość w tablicy
+range_max		- największa możliwa wartość w tablicy
+
+dane:
+
+range_size		- zmienna przechowująca rozmiar zakresu danych
+buckets			- tablica przechowująca liczniki sortowanych wartości
+i			- iterator przechowujący aktualną pozycję w tablicy
+j			- iterator wskazujący następne nienadpisane pole w tabeli wejściowej
+
+algorytm:
+
+jeżeli rozmiar tablicy array jest <= od 1:
+	zwróć tablicę array
+
+range_size <- range_max - range_min + 1
+
+buckets <- tablica o rozmiarze range_size
+
+i <- 0
+dopóki i < rozmiar tablicy array:
+	buckets[array[i] - range_min] <- buckets[array[i] - range_min] + 1
+	i <- i + 1
+
+i <- 0
+j <- 0
+
+dopóki i < range_size:
+	dopóki buckets[i] > 0:
+		array[j] <- i + range_min
+		j <- j + 1
+		buckets[i] <- buckets[i] - 1
+	i <- i + 1
+
+zwróć tablicę array
+
+

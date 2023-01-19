@@ -1,0 +1,24 @@
+wejście:
+
+array			- tablica zawierająca dane do posortowania
+
+dane:
+
+i			- iterator przechowujący aktualną pozycję w tablicy
+j			- iterator przechowujący następną nieposortowaną pozycję
+
+algorytm:
+
+jeżeli rozmiar tablicy array jest <= od 1:
+	zwróć tablicę array
+
+i <- 1
+j <- 2
+dopóki i < rozmiar tablicy array:
+	jeżeli i == 0 lub array[i - 1] <= array[i]:
+		i <- j
+		j <- j + 1
+	w przeciwnym przypadku:
+		array[i - 1] <-> array[i]
+		i <- i - 1
+zwróć tablicę array
