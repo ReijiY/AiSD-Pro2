@@ -1,3 +1,22 @@
 # depslib dependency file v1.0
 1674131543 source:c:\users\reiko\desktop\aisd\aisd-pro2\projekt.cpp
 
+1674157054 source:c:\projects\visual studio\aisd-pro2\projekt.cpp
+
+1674157372 source:c:\projects\visual studio\aisd-pro2\main.cpp
+	<vector>
+	<math.h>
+	"projekt.h"
+
+1674157054 c:\projects\visual studio\aisd-pro2\projekt.h
+	<Windows.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<algorithm>
+	<time.h>
+	<vector>
+	<chrono>
+	<deque>
+
